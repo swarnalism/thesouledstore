@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Souled Store</title>
+    <style>
+      /* Internal CSS starts here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .logo {
+        width: 150px;
+      }
+      .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        align-content: center;
+      }
+      .nav-links li {
+        display: inline;
+        color: black;
+      }
+      .promo-banner {
+        background-color: red;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+      }
+      .registration-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #0f7878;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #b34200;
+      }
+      .product-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
+
+      /* Styling for individual product items */
+      .product-item {
+        flex: 1;
+        text-align: center;
+      }
+
+      /* Styling for product image */
+      .product-image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Styling for product name and price */
+      .product-name {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .product-price {
+        color: #555;
+      }
+      /* Footer container */
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #e6e7e8;
+        padding: 20px;
+      }
+
+      /* Logo */
+      .logo {
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Central text */
+      .copyright {
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Social media icons */
+      .social-icons {
+        display: flex;
+      }
+
+      .social-icons a {
+        margin-right: 10px;
+        color: #555;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://www.thesouledstore.com/static/img/newlogo.8dcc6cc.png"
+        alt="The Souled Store Logo"
+        class="logo"
+      />
+      <nav>
+        <ul class="nav-links">
+          <li>SUMMER'21</li>
+          <li>TOPWEAR</li>
+          <li>BOTTOMWEAR</li>
+          <li>SHOES & ACCESSORIES</li>
+          <li>RESTOCKED</li>
+          <li>THEMES</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="promo-banner">HOMEGROWN INDIAN BRAND</div>
+    <div align="center">Over <b>6 Million</b> Happy Customers</div>
+    <div>
+      <img
+        title=""
+        src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/category/catban-020240518125124.jpg?format=webp&w=1366&dpr=1.0"
+        alt="banner"
+        height="400px"
+        width="100%"
+      />
+    </div>
+    <div class="registration-form">
+      <h2>Register with The Souled Store</h2>
+      <button class="facebook-btn">Facebook</button>
+      <button class="google-btn">Google</button>
+      <form action="">
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="First Name *"
+          required
+        />
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Last Name *"
+          required
+        />
+        <input
+          type="email"
+          id="email-id"
+          name="email-id"
+          placeholder="Email ID *"
+          required
+        />
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Confirm Password *"
+          required
+        />
+        <label for="birthday-discount">
+          <input
+            type="text"
+            id="birthday-discount"
+            name="birthday-discount"
+            placeholder="Please enter your birthdate *"
+            required
+          />
+          (Avail 10% Birthday discount as a member)
+          <br />
+          <br />
+        </label>
+        <input
+          type="text"
+          id="mobilenumber"
+          name="mobilenumber"
+          placeholder="+91 Mobile Number(For order status update) *"
+        />
+        Gender:
+        <input type="radio" id="male" name="gender" value="male" /> Male
+        <input type="radio" id="female" name="gender" value="female" /> Female
+        <input type="radio" id="other" name="gender" value="other" /> Other
+        <br />
+        <br />
+        <button type="submit">REGISTER</button>
+      </form>
+      <br />
+      <p>Already a customer? <a title="" font-color="red" href="#">Login</a></p>
+    </div>
+    <div class="product-container">
+      <div class="product-item">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1716012238_8675019.jpg?format=webp&w=300&dpr=1.0"
+          alt="White Bralette"
+          class="product-image"
+        />
+        <div class="product-name">White Bralette Top</div>
+        <div class="product-price">₹699</div>
+      </div>
+      <div class="product-item">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714716706_5314418.png?format=webp&w=300&dpr=1.0"
+          alt="Lavender Shirt"
+          class="product-image"
+        />
+        <div class="product-name">Cotton Linen Lavender Shirt</div>
+        <div class="product-price">₹1399</div>
+      </div>
+      <div class="product-item">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1716010720_6709366.jpg?format=webp&w=300&dpr=1.0"
+          alt="Camel Pants"
+          class="product-image"
+        />
+        <div class="product-name">Korean Pants (Camel)</div>
+        <div class="product-price">₹1999</div>
+      </div>
+      <div class="product-item">
+        <img
+          src="https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1714975025_8996571.jpg?format=webp&w=300&dpr=1.0"
+          alt="Green Bralette"
+          class="product-image"
+        />
+        <div class="product-name">Green Bralette Top</div>
+        <div class="product-price">₹799</div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="logo">
+        <img
+          src="https://www.thesouledstore.com/static/img/newlogo.8dcc6cc.png"
+          alt="logo.png"
+        />
+      </div>
+      <div class="copyright"><b>© The Souled Store 2024-25</b></div>
+      <div class="social-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </footer>
+  </body>
+</html>
